@@ -49,6 +49,14 @@ const styles = StyleSheet.create({
     flex: 0.5,
     paddingHorizontal: 10,
   },
+  outlineButtonStyle: {
+    backgroundColor: color.white,
+    borderWidth: 1,
+    borderColor: color.main,
+  },
+  outlineTextStyle: {
+    color: color.main,
+  },
 });
 
 export {styles};

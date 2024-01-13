@@ -33,7 +33,11 @@ const Conditions = () => {
 
         <View style={styles.row}>
           <View style={styles.containerButton}>
-            <Button text={'ปฏิเสธ'} />
+            <Button
+              styleText={styles.outlineTextStyle}
+              styleContainer={styles.outlineButtonStyle}
+              text={'ปฏิเสธ'}
+            />
           </View>
 
           <View style={styles.containerButton}>
