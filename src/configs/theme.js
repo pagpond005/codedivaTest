@@ -4,6 +4,7 @@ export const color = {
   grayText: '#676C6D',
   underline: '#E3ECFD',
   main: '#59aae0',
+  gray: '#BEBBBB',
 };
 
 export const fontSize = {

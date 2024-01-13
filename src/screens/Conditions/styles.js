@@ -10,8 +10,7 @@ const styles = StyleSheet.create({
   iconStyle: {
     position: 'absolute',
     top: 60,
-    left: 20,
-    padding: 5,
+    left: 24,
   },
   containerCondition: {
     flex: 0.75,
@@ -26,7 +25,7 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.25,
     shadowRadius: 3.84,
     elevation: 5,
-    paddingHorizontal: 20,
+    paddingHorizontal: 24,
     paddingBottom: 40,
   },
   containerHeader: {
@@ -47,12 +46,15 @@ const styles = StyleSheet.create({
   },
   containerButton: {
     flex: 0.5,
-    paddingHorizontal: 10,
   },
   outlineButtonStyle: {
     backgroundColor: color.white,
     borderWidth: 1,
     borderColor: color.main,
+    marginRight: 10,
+  },
+  marginLeft: {
+    marginLeft: 10,
   },
   outlineTextStyle: {
     color: color.main,

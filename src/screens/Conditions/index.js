@@ -41,7 +41,11 @@ const Conditions = () => {
           </View>
 
           <View style={styles.containerButton}>
-            <Button text={'ยอมรับ'} />
+            <Button
+              text={'ยอมรับ'}
+              styleContainer={styles.marginLeft}
+              onPress={() => navigation.navigate('Login')}
+            />
           </View>
         </View>
       </View>
