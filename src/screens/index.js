@@ -1,3 +1,2 @@
-import {ChooseLanguage} from './ChooseLanguage';
-
-export {ChooseLanguage};
+export {ChooseLanguage} from './ChooseLanguage';
+export {Conditions} from './Conditions';

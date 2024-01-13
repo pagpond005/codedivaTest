@@ -1,3 +1,1 @@
-import {MainStackNavigator} from './MainStackNavigator';
-
-export {MainStackNavigator};
+export {MainStackNavigator} from './MainStackNavigator';
