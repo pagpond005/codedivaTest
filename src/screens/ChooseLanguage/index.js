@@ -15,12 +15,8 @@ const ChooseLanguage = () => {
       </View>
 
       <View style={styles.buttonContainer}>
-        <Button
-          styleContainer={styles.buttonMargin}
-          text="English"
-          onPress={() => navigation.navigate('Conditions')}
-        />
-        <Button text="ไทย" />
+        <Button styleContainer={styles.buttonMargin} text="English" />
+        <Button text="ไทย" onPress={() => navigation.navigate('Conditions')} />
       </View>
     </View>
   );
