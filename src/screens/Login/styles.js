@@ -53,7 +53,7 @@ const styles = StyleSheet.create({
     width: Dimensions.get('screen').width / 3.3,
   },
   textLine: {
-    color: color.grayText,
+    color: color.gray,
   },
 });
 

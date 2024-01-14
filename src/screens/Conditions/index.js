@@ -1,25 +1,17 @@
 import React from 'react';
-import {Text, TouchableOpacity, View} from 'react-native';
+import {Text, View} from 'react-native';
 import {styles} from './styles';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import {color} from '../../configs';
 import {useNavigation} from '@react-navigation/native';
-import {Button} from '../../components';
+import {Button, HeaderBack} from '../../components';
 
 const Conditions = () => {
   const navigation = useNavigation();
 
   return (
     <View style={styles.container}>
-      <TouchableOpacity
-        style={styles.iconStyle}
-        onPress={() => navigation.goBack()}>
-        <MaterialCommunityIcons
-          name="arrow-left"
-          size={30}
-          color={color.black}
-        />
-      </TouchableOpacity>
+      <HeaderBack />
 
       <View style={styles.containerCondition}>
         <View style={styles.containerHeader}>

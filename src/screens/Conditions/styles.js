@@ -7,11 +7,6 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'flex-end',
   },
-  iconStyle: {
-    position: 'absolute',
-    top: 60,
-    left: 24,
-  },
   containerCondition: {
     flex: 0.75,
     backgroundColor: color.white,
