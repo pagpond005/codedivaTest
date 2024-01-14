@@ -1,6 +1,12 @@
 import React from 'react';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import {ChooseLanguage, Conditions, Login, OtpRequest} from '../screens';
+import {
+  ChooseLanguage,
+  Conditions,
+  ConfirmOtp,
+  Login,
+  OtpRequest,
+} from '../screens';
 
 const Stack = createNativeStackNavigator();
 
@@ -31,6 +37,13 @@ const MainStackNavigator = () => {
       <Stack.Screen
         name="OtpRequest"
         component={OtpRequest}
+        options={{
+          headerShown: false,
+        }}
+      />
+      <Stack.Screen
+        name="ConfirmOtp"
+        component={ConfirmOtp}
         options={{
           headerShown: false,
         }}

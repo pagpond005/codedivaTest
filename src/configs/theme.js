@@ -12,3 +12,8 @@ export const fontSize = {
   normal: 16,
   subText: 14,
 };
+
+export const fontWeight = {
+  header: '600',
+  subHeader: '500',
+};

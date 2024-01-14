@@ -4,8 +4,11 @@ import {styles} from './styles';
 import {Button, HeaderBack} from '../../components';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import {color} from '../../configs';
+import {useNavigation} from '@react-navigation/native';
 
 const OtpRequest = () => {
+  const navigation = useNavigation();
+
   return (
     <View style={styles.container}>
       <HeaderBack />
@@ -23,7 +26,10 @@ const OtpRequest = () => {
 
         <Text style={styles.telText}>082-XXX-8998</Text>
 
-        <Button text="ขอรหัส OTP" />
+        <Button
+          text="ขอรหัส OTP"
+          onPress={() => navigation.navigate('ConfirmOtp')}
+        />
 
         <Text style={styles.subText}>
           กรณีเบอร์โทรศัพท์ไม่ถูกต้องกรุณาติดต่อ 02-xxx-xxxx

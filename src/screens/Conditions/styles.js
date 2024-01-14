@@ -1,6 +1,6 @@
 import {StyleSheet} from 'react-native';
 import {color} from '../../configs';
-import {fontSize} from '../../configs/theme';
+import {fontSize, fontWeight} from '../../configs/theme';
 
 const styles = StyleSheet.create({
   container: {
@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
   },
   textHeader: {
-    fontWeight: '600',
+    fontWeight: fontWeight.header,
     fontSize: fontSize.header,
     marginLeft: 12,
   },

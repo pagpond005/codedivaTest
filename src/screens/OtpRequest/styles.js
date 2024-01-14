@@ -1,5 +1,5 @@
 import {StyleSheet} from 'react-native';
-import {color, fontSize} from '../../configs/theme';
+import {color, fontSize, fontWeight} from '../../configs/theme';
 
 const styles = StyleSheet.create({
   container: {
@@ -12,14 +12,14 @@ const styles = StyleSheet.create({
   },
   headerText: {
     fontSize: fontSize.header,
-    fontWeight: '600',
+    fontWeight: fontWeight.header,
     textAlign: 'center',
   },
   telText: {
     marginTop: 24,
     marginBottom: 48,
     color: color.main,
-    fontWeight: '600',
+    fontWeight: fontWeight.subHeader,
     fontSize: fontSize.header,
     textAlign: 'center',
   },
