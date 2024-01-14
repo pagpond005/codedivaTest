@@ -55,7 +55,7 @@ const CreatePin = () => {
             style={[
               styles.keyboardButtonText,
               {
-                color: pressedButton === '0' ? color.white : color.black,
+                color: pressedButton === '0' ? color.white : color.grayText,
               },
             ]}>
             0

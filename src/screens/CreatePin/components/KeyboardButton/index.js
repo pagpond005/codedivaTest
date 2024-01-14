@@ -27,7 +27,7 @@ const KeyboardButton = ({
         style={[
           styles.keyboardButtonText,
           {
-            color: pressedButton === number ? color.white : color.black,
+            color: pressedButton === number ? color.white : color.grayText,
           },
         ]}>
         {number}
