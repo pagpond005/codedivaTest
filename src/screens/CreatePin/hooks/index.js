@@ -1,0 +1,1 @@
+export {useHandlePin} from './useHandlePin';

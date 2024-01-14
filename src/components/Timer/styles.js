@@ -1,5 +1,5 @@
 import {StyleSheet} from 'react-native';
-import {fontSize} from '../../configs/theme';
+import {fontSize} from '../../configs';
 
 const styles = StyleSheet.create({
   timerText: {

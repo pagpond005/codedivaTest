@@ -8,6 +8,7 @@ export const color = {
 };
 
 export const fontSize = {
+  big28: 28,
   header: 22,
   normal: 16,
   subText: 14,

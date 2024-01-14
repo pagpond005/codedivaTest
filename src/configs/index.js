@@ -1,3 +1,1 @@
-import {color} from './theme';
-
-export {color};
+export {color, fontSize, fontWeight} from './theme';
