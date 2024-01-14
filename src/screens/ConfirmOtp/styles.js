@@ -20,8 +20,37 @@ const styles = StyleSheet.create({
     fontWeight: fontWeight.subHeader,
     color: color.grayText,
   },
+  bottomText: {
+    fontSize: fontSize.normal,
+    color: color.grayText,
+    textAlign: 'center',
+    marginTop: 48,
+  },
+  resendText: {
+    fontSize: fontSize.normal,
+    fontWeight: fontWeight.subHeader,
+    color: color.main,
+    textAlign: 'center',
+  },
   marginTop8: {
     marginTop: 8,
+  },
+  otpStyle: {
+    width: '100%',
+    height: 200,
+  },
+  underlineStyleBase: {
+    borderWidth: 0,
+    borderBottomWidth: 1,
+    borderColor: color.gray,
+    color: color.black,
+    fontSize: fontSize.header,
+  },
+  timerContainer: {
+    flexDirection: 'row',
+    marginTop: 12,
+    alignItems: 'center',
+    justifyContent: 'center',
   },
 });
 
