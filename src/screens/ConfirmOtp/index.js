@@ -3,8 +3,10 @@ import {Keyboard, Text, TouchableOpacity, View} from 'react-native';
 import {styles} from './styles';
 import {CountdownTimer, HeaderBack} from '../../components';
 import OTPInputView from '@twotalltotems/react-native-otp-input';
+import {useNavigation} from '@react-navigation/native';
 
 const ConfirmOtp = () => {
+  const navigation = useNavigation();
   const [countdown, setCountdown] = useState(60);
 
   return (
@@ -30,7 +32,8 @@ const ConfirmOtp = () => {
           autoFocusOnLoad
           codeInputFieldStyle={styles.underlineStyleBase}
           onCodeFilled={code => {
-            Keyboard.dismiss();
+            console.log(`Code is ${code}, you are good to go!`);
+            navigation.navigate('CreatePin');
           }}
         />
 

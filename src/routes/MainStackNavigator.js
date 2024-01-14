@@ -4,6 +4,7 @@ import {
   ChooseLanguage,
   Conditions,
   ConfirmOtp,
+  CreatePin,
   Login,
   OtpRequest,
 } from '../screens';
@@ -44,6 +45,13 @@ const MainStackNavigator = () => {
       <Stack.Screen
         name="ConfirmOtp"
         component={ConfirmOtp}
+        options={{
+          headerShown: false,
+        }}
+      />
+      <Stack.Screen
+        name="CreatePin"
+        component={CreatePin}
         options={{
           headerShown: false,
         }}
