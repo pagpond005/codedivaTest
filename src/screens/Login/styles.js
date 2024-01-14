@@ -55,6 +55,15 @@ const styles = StyleSheet.create({
   textLine: {
     color: color.gray,
   },
+  outlineButtonStyle: {
+    backgroundColor: 'transparent',
+    borderWidth: 1,
+    borderColor: color.main,
+    marginRight: 10,
+  },
+  outlineTextStyle: {
+    color: color.main,
+  },
 });
 
 export {styles};

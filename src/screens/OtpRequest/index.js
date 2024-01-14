@@ -1,10 +1,10 @@
 import React from 'react';
-import {Text, View} from 'react-native';
+import {Image, Text, View} from 'react-native';
 import {styles} from './styles';
 import {Button, HeaderBack} from '../../components';
-import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
-import {color} from '../../configs';
 import {useNavigation} from '@react-navigation/native';
+import IMAGES from '../../constants/images';
+import {color} from '../../configs';
 
 const OtpRequest = () => {
   const navigation = useNavigation();
@@ -14,13 +14,11 @@ const OtpRequest = () => {
       <HeaderBack />
 
       <View style={styles.containerContent}>
-        <View style={styles.iconView}>
-          <MaterialCommunityIcons
-            name="cellphone-lock"
-            size={80}
-            color={color.main}
-          />
-        </View>
+        <Image
+          source={IMAGES.otpRequest}
+          style={styles.imgStyle}
+          tintColor={color.main}
+        />
 
         <Text style={styles.headerText}>OTP จะถูกส่งไปที่เบอร์โทรศัพท์</Text>
 
@@ -32,7 +30,7 @@ const OtpRequest = () => {
         />
 
         <Text style={styles.subText}>
-          กรณีเบอร์โทรศัพท์ไม่ถูกต้องกรุณาติดต่อ 02-xxx-xxxx
+          กรณีเบอร์โทรศัพท์ไม่ถูกต้องกรุณาติดต่อ 02-XXX-XXXX
         </Text>
       </View>
     </View>

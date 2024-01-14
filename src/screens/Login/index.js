@@ -56,7 +56,11 @@ const Login = () => {
           <View style={styles.line} />
         </View>
 
-        <Button text="เปิดบัญชีเพื่อลงทะเบียนบัญชีผู้ใช้" />
+        <Button
+          styleContainer={styles.outlineButtonStyle}
+          styleText={styles.outlineTextStyle}
+          text="เปิดบัญชีเพื่อลงทะเบียนบัญชีผู้ใช้"
+        />
       </View>
     </View>
   );

@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
   },
   telText: {
     marginTop: 24,
-    marginBottom: 48,
+    marginBottom: 60,
     color: color.main,
     fontWeight: fontWeight.subHeader,
     fontSize: fontSize.header,
@@ -29,9 +29,12 @@ const styles = StyleSheet.create({
     fontSize: fontSize.subText,
     textAlign: 'center',
   },
-  iconView: {
-    alignItems: 'center',
+  imgStyle: {
+    width: 120,
+    height: 120,
     marginBottom: 60,
+    resizeMode: 'contain',
+    alignSelf: 'center',
   },
 });
 

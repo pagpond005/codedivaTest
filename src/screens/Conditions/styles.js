@@ -43,7 +43,7 @@ const styles = StyleSheet.create({
     flex: 0.5,
   },
   outlineButtonStyle: {
-    backgroundColor: color.white,
+    backgroundColor: 'transparent',
     borderWidth: 1,
     borderColor: color.main,
     marginRight: 10,
