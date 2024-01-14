@@ -2,20 +2,32 @@ import {useState} from 'react';
 
 const useHandlePin = () => {
   const [pressedButton, setPressedButton] = useState(null);
+  const [confirmScreen, setConfirmScreen] = useState(false);
   const [pin, setPin] = useState('');
+  const [confirmPin, setConfirmPin] = useState('');
   const pinLength = 6;
 
   const handlePinInput = value => {
+    if (confirmScreen) {
+      setConfirmPin(confirmPin + value);
+      if (confirmPin.length + 1 === pinLength) {
+        console.log('full confirm pin');
+      }
+    }
     if (pin.length < pinLength) {
       setPin(pin + value);
       if (pin.length + 1 === pinLength) {
-        console.log('full pin');
+        setConfirmScreen(true);
       }
     }
   };
 
   const handleDelete = () => {
-    setPin(pin.slice(0, -1));
+    if (confirmScreen) {
+      setConfirmPin(confirmPin.slice(0, -1));
+    } else {
+      setPin(pin.slice(0, -1));
+    }
     setPressedButton(null);
   };
 
@@ -30,8 +42,10 @@ const useHandlePin = () => {
 
   return {
     pin,
+    confirmPin,
     pinLength,
     pressedButton,
+    confirmScreen,
     handlePinInput,
     handleDelete,
     handleButtonPressIn,

@@ -10,6 +10,8 @@ import {KeyboardButton, PinInputs} from './components';
 const CreatePin = () => {
   const {
     pin,
+    confirmPin,
+    confirmScreen,
     pinLength,
     pressedButton,
     handleDelete,
@@ -19,10 +21,16 @@ const CreatePin = () => {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>ตั้งรหัส PIN CODE</Text>
+      <Text style={styles.title}>
+        {confirmScreen ? 'ยืนยันรหัส PIN CODE' : 'ตั้งรหัส PIN CODE'}
+      </Text>
 
       <View style={styles.pinContainer}>
-        <PinInputs pin={pin} pinLength={pinLength} />
+        {confirmScreen ? (
+          <PinInputs pin={confirmPin} pinLength={pinLength} />
+        ) : (
+          <PinInputs pin={pin} pinLength={pinLength} />
+        )}
       </View>
 
       <View style={styles.keyboardContainer}>
